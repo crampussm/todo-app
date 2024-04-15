@@ -4,12 +4,15 @@ import { updateTodo } from "../features/todo/todoSlice";
 import CloseIcon from "@mui/icons-material/Close";
 
 function EditTodo(props) {
+  // Initializing input variable
   const [input, setInput] = useState({
     id: props.todo.id,
     name: props.todo.name,
     details: props.todo.text,
   });
   const dispatch = useDispatch();
+
+  // Function to edit todo
   const EditTodoHandler = (e) => {
     e.preventDefault();
     dispatch(updateTodo(input));

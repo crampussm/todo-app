@@ -13,6 +13,8 @@ function Task(props) {
   const [isEditPop, setIsEditPop] = useState(false);
   const [isCompleted, setIsCompleted] = useState(false);
   const dispatch = useDispatch();
+
+  // Function for task drop down
   const handleDetailsDropDown = () => {
     if (isDetailsDropDown) {
       setIsDetailsDropDown(false);
@@ -20,6 +22,8 @@ function Task(props) {
       setIsDetailsDropDown(true);
     }
   };
+
+  // Function for task edit popup
   const handleEditPopup = () => {
     if (isEditPop) {
       setIsEditPop(false);
@@ -27,6 +31,8 @@ function Task(props) {
       setIsEditPop(true);
     }
   };
+
+  // Function to mark todo as completed
   const handleMarkAsCompleted = (e) => {
     e.preventDefault();
     dispatch(markCompleteTodo(props.todo.id));

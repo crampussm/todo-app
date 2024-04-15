@@ -4,8 +4,11 @@ import { addTodo } from "../features/todo/todoSlice";
 import CloseIcon from "@mui/icons-material/Close";
 
 function AddTodo(props) {
+  // Initializing input state variable
   const [input, setInput] = useState({ name: "", details: "" });
   const dispatch = useDispatch();
+
+  // Function to add Todo
   const addTodoHandler = (e) => {
     e.preventDefault();
     dispatch(addTodo(input));
