@@ -7,7 +7,7 @@ function Todos() {
 
   return (
     <>
-      <div style={{ fontWeight: "500", fontSize: "1.2rem" }}>Todos</div>
+      <div className="todo-heading">Todos</div>
       <div className="todos">
         {todos &&
           todos.map((todo) => {

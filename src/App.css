@@ -9,6 +9,10 @@
   width: 100%;
   text-align: left;
 }
+.todo-heading {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
 .top {
   width: 100%;
   padding: 5;
@@ -147,4 +151,50 @@
 }
 .w-20 {
   width: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+  .top button {
+    width: 50%;
+  }
+  .top-heading {
+    font-size: larger;
+  }
+  .popup {
+    width: 80%;
+  }
+  .btn {
+    width: 30%;
+  }
+  .todo-comp {
+    width: 80%;
+  }
+  .w-12 {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 600px) {
+  .top button {
+    width: 30%;
+    font-size: x-large;
+  }
+  .top-heading {
+    font-size: xx-large;
+    padding: 0px 10px;
+  }
+  .todo-heading {
+    font-size: xx-large;
+  }
+  .popup {
+    width: 80%;
+  }
+  .btn {
+    width: 20%;
+  }
+  .todo-comp {
+    width: 80%;
+  }
+  .w-12 {
+    width: 15%;
+  }
 }
